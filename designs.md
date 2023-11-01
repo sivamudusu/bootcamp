@@ -16,4 +16,6 @@
 
 [Excercise 8 contrast checking](https://www.figma.com/file/RhY0l6PZaQ9bL7NR1cD14o/Designs?type=design&node-id=49%3A3&mode=design&t=T0GIVDJDCwwyrnkO-1)
 
+[Excercise 9 blogpost layout](https://www.figma.com/file/RhY0l6PZaQ9bL7NR1cD14o/Designs?type=design&node-id=89%3A33&mode=design&t=3Z1kZDoCK36vDnb1-1)
+
 [Excercise 10 landing page for a company which sells reusable products](https://www.figma.com/file/z75l8ZlcTO9L3P6Hfoi7F7/landing-page?type=design&node-id=0%3A1&mode=design&t=63cePCGTt0mQQGIv-1)
