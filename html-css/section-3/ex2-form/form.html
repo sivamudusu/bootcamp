@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./form.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Become a Blood Donor </h1>
+    <form action="#" method="post">
+        <label for="fullname">Enter your Full Name</label>
+        <input placeholder="your Full Name" id="fullname" type="text" required aria-label="Name">
+        <label for="email">Enter your Email</label>
+        <input placeholder="example@email.com" id="email" type="email" required aria-label="Email">
+        <label >Enter your Number</label>
+        <input placeholder="Your mobile Number" id="number" type="tel">
+        <label for="bloodType" > blood type</label>
+        <select id="bloodType" name="bloodType" required aria-label="Blood Type">
+            <option value="" disabled  selected >select your blood type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        <label for="city">Enter your City</label>
+        <input placeholder="City" type="text" id="city" required aria-label="City">
+        <label for="dob">Enter Your Date of Birth</label>
+        <input placeholder="DOB" id="dob" type="date" required aria-label="DOB">
+        <button type="submit">Register as Donor</button>
+    </form>
+    
+</body>
+</html>
