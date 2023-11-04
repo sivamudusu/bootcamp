@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.card{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+.profile>img{
+    border-radius: 10px;
+}
+.card .about{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    display: flex;
+    position: relative;
+    top: -75px;
+    padding: 10px;
+}
+.about .name-age{
+    display: flex;
+
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.age{
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(193, 190, 190);
+}
+.gender{
+    font-size: 10px;
+    color: rgb(193, 191, 191);
+}
+.details,.bio{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    max-width: 200px;
+
+
+}
+.quote-title,.bio-title{
+    font-size: 10px;
+    color:rgb(131, 130, 130); ;
+}
+.quote,.bio-content{
+    color: rgb(3, 3, 59);
+    font-size: 13px;
+}

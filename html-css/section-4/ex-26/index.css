@@ -1,0 +1,24 @@
+
+
+
+.header .logo{
+    margin-right: 400px;
+    font-size: 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+header>div{
+    display: inline;
+}
+ul>li{
+    list-style: none;
+    display: inline;
+}
+.nav li{
+    margin-right: 20px;
+    font-size: 15px;
+}
