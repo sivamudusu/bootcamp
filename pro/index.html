@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      font-family: sans-serif;
+    }
+
+    .greenkart-section {
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product-item {
+      flex: 1 1 33%;
+      margin: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-wrap: nowrap;
+      }
+
+      .product-item {
+        flex: 1 1 100%;
+      }
+    }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <h1>Greenkart</h1>
+        <h2>Your Sustainable Shopping Destination</h2>
+      </header>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.logo{
+    position: absolute;
+    left: 30px;
+}
+.navigation a{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;
+
+}
+.kart-profile{
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+.navigation{
+    position: relative;
+    left: 50px;
+}
+.kart-profile div{
+    padding: 10px;
+}
+.hero-section{
+    display: flex;
+}
+.main-img >img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.welcome{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+    left: 50px;
+}
+.big-font{
+    font-size: 48px;
+    font-weight: bold;
+}
+.sub{
+    font-size: 48px;
+    font-weight: 100;
+}
+.welcome p{
+    font-size: 16px;
+    color: gray;
+}
+.welcome button,button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(18, 100, 42);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.cards-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.cards-section>button{
+    margin-top: 50px;
+}
+.card-title{
+    margin: 50px;
+    font-size: 36;
+    font-weight: bold;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    margin: 30px;
+
+}
+.card button{
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+}
+.row1,.row2{
+    display: flex;
+}
