@@ -5,16 +5,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 1.875rem;
 }
 .logo{
     position: absolute;
-    left: 30px;
+    left: 1.875rem;
 }
 .navigation a{
     text-decoration: none;
     display: inline;
     margin-right: 20px;
+    color: black;
 
 }
 .kart-profile{
@@ -68,6 +69,12 @@ body{
     border: none;
     border-radius: 10px;
 }
+.welcome button{
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(1, 46, 1);
+}
 .cards-section{
     display: flex;
     flex-direction: column;
@@ -79,9 +86,9 @@ body{
 .cards-section>button{
     margin-top: 50px;
 }
-.card-title{
+.card-title,.review-title,.chose-title{
     margin: 50px;
-    font-size: 36;
+    font-size: 36px;
     font-weight: bold;
 }
 .card{
@@ -109,4 +116,209 @@ body{
 }
 .row1,.row2{
     display: flex;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.reviews img{
+    width: 100px;
+    height: 100px;
+
+}
+.riview{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.riview>*.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    max-height: 400px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.review img{
+    border-radius: 50px;
+    border: 2px solid purple;
+}
+
+.custname{
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0 10px 0;
+}
+.comment{
+    font-size: 16;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review div{
+    padding-top: 10px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:left ;
+}
+.rating>.stars{
+   margin: 10px 50px 0 0;
+}
+.rating>.smile{
+    margin: 10px 0 0 40px;
+ }
+ .review .green-dot{
+   position: relative;
+   left: 100px;
+   bottom: 20px;
+ }
+.why-choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.why-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inside-item{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.inside-item>div{
+    padding-top: 10px;
+}
+.titles{
+    font-size: 16px;
+    font-weight: bold;
+}
+.inside-item .contents,.comment{
+    text-align: center;
+}
+.inside-item .contents{
+    font-size: 13px;
+    color: gray;
+}
+.newsletter{
+    background-image: url("https://images.unsplash.com/photo-1584204559709-ca7d413229eb?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image{
+    background-image: url("https://media.istockphoto.com/id/1185329848/photo/eco-natural-paper-cups-straws-toothbrush-flat-lay-on-gray-background-sustainable-lifestyle.jpg?s=2048x2048&w=is&k=20&c=Bb3DFesvLVdEqsdlEl-YoOsrYUGGHVM21KKfROQ5CXA=");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px 0 0 20px;
+}
+.letter{
+    display: flex;
+    border-radius: 20px;
+
+}
+.letter-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+}
+.letter-details .subscribe{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.letter-details .join{
+    max-width: 500px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.letter-details input{
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+footer{
+    background-color: rgb(143, 85, 27);
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 200px;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+}
+.social-media>div{
+    margin-right: 10px;
+}
+.left-footer>div{
+    margin: 10px 10px 10px 0;
+}
+.navigate a{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;
+    color: rgb(208, 204, 204);
+    font-size: 12px;
+}
+.ending-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.gray{
+    font-size: 10px;
+    color: rgb(200, 199, 199);
+}
+.right-footer{
+    position: relative;
+    left: 100px;
+}
+.contact{
+    margin-bottom: 10px;
+}
+.small{
+    color: rgb(200, 199, 199);
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+@media screen {
+    
 }
