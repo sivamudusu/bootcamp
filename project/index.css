@@ -2,269 +2,218 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.875rem;
-}
-.logo{
-    position: absolute;
-    left: 1.875rem;
-}
-.navigation a{
-    text-decoration: none;
-    display: inline;
-    margin-right: 20px;
-    color: black;
 
+
+}
+.logo h3{
+    font-family: 'Italianno', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+.menu-kart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+.menu>div{
+    margin-right: 10px;
 }
 .kart-profile{
     display: flex;
-    position: absolute;
-    right: 20px;
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
 }
-.navigation{
+.kart-profile>div{
+    margin-left: 20px;
+}
+.search-bar{
+    margin-left: 10px;
+}
+.search-bar>input{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
     position: relative;
-    left: 50px;
+    bottom: 20px;
+    
 }
-.kart-profile div{
-    padding: 10px;
-}
+
+/* hero section */
 .hero-section{
     display: flex;
-}
-.main-img >img{
-    height: 300px;
-    width: 300px;
-    border-radius: 20px;
-    position: relative;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-.welcome{
-    display: flex;
-    position: relative;
     flex-direction: column;
-    align-items: last baseline;
-    justify-content: center;
-    left: 50px;
 }
-.big-font{
-    font-size: 48px;
-    font-weight: bold;
+.hero-section>.main-img{
+    background-image:url("https://media.istockphoto.com/id/1165099685/photo/cotton-bag-glass-jar-green-leaves-and-recycled-tableware-top-view-zero-waste-eco-friendly.jpg?s=2048x2048&w=is&k=20&c=8OMgd9R-L5-WQAnshHl-eo2EWDej2FOTGXluEsL6ioo=") ;
+    background-size: cover;
+    height: 300px;
 }
-.sub{
-    font-size: 48px;
-    font-weight: 100;
+.welcome {
+    margin-left: 10px;
 }
-.welcome p{
-    font-size: 16px;
+.welcome>p{
+    font-size: 8px;
     color: gray;
 }
-.welcome button,button{
-    width: 100px;
-    height: 30px;
-    background-color: rgb(18, 100, 42);
+.hero-section button,button{
+    background-color: rgb(6, 101, 6);
+    border-radius: 5px;
     color: white;
     border: none;
-    border-radius: 10px;
+    min-width: 20px;
+    font-size: 10px;
+    align-self: center;
+    margin: 10px;
 }
-.welcome button{
-    margin-top: 20px;
+.hero-section button{
+    margin-top: 30px;
 }
-button:hover{
-    background-color: rgb(1, 46, 1);
-}
+/* cards section */
 .cards-section{
+    margin: 80px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.cards-section>button{
-    margin-top: 50px;
-}
-.card-title,.review-title,.chose-title{
-    margin: 50px;
-    font-size: 36px;
-    font-weight: bold;
+    justify-content: center;
+    
 }
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: last baseline;
-    margin: 30px;
-
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 600px;
 }
-.card button{
-    position: relative;
-    bottom: 40px;
-    left: 10px;
-}
-.reviews{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card img{
-    height: 250px;
-    width: 200px;
-    border-radius: 20px;
+.card1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    
 }
 .row1,.row2{
     display: flex;
+    flex-direction: row;
+    columns: 300px 2;
+    
+    
 }
+.card button{
+    width: 30px;
+    font-size: 5px;
+   
+   
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.pro-title{
+    font-size: 8px;
+}
+
+.reviw-price{
+    display: flex;
+    font-size: 5px;
+    justify-content: space-between;
+}
+.rev-count{
+    color: grey;
+
+}
+
+.reviw-price div{
+    margin: 10px;
+}
+
+/* review section */
 .reviews{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-}
-.reviews img{
-    width: 100px;
-    height: 100px;
-
+    justify-content: center;
 }
 .riview{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    min-width: auto;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 
-}
-.riview>*.review{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 200px;
-    max-height: 400px;
-    margin: 20px;
-    padding: 30px;
-    border: 1px solid green;
-    border-radius: 10px;
 }
 .review img{
-    border-radius: 50px;
-    border: 2px solid purple;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.custname{
-    font-size: 24px;
-    font-weight: 300;
-    padding: 10px 0 10px 0;
-}
-.comment{
-    font-size: 16;
-    color: gray;
+.green-dot3{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+}
+.review .comment{
+    font-size: 8px;
+    max-width: 200px;
 }
 .review div{
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.rating{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:left ;
+.custname{
+    font-size: 10px;
+    color: black;
 }
-.rating>.stars{
-   margin: 10px 50px 0 0;
+.review{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px;
+    color: gray;
+    padding: 5px;
+    max-width: 300px;
+   
 }
-.rating>.smile{
-    margin: 10px 0 0 40px;
- }
- .review .green-dot{
-   position: relative;
-   left: 100px;
-   bottom: 20px;
- }
 .why-choose{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    justify-content: center;
+    margin: 50px;
+
 }
+.card-title,.review-title,.chose-title{
+    margin-bottom: 40px;
+}
+
 .why-card{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.inside-item{
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.inside-item>div{
-    padding-top: 10px;
-}
-.titles{
-    font-size: 16px;
-    font-weight: bold;
-}
-.inside-item .contents,.comment{
     text-align: center;
 }
 .inside-item .contents{
-    font-size: 13px;
+    font-size: 8px;
     color: gray;
+    max-width: 200px;
+    padding: 10px;
 }
-.newsletter{
-    background-image: url("https://images.unsplash.com/photo-1584204559709-ca7d413229eb?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.image{
-    background-image: url("https://media.istockphoto.com/id/1185329848/photo/eco-natural-paper-cups-straws-toothbrush-flat-lay-on-gray-background-sustainable-lifestyle.jpg?s=2048x2048&w=is&k=20&c=Bb3DFesvLVdEqsdlEl-YoOsrYUGGHVM21KKfROQ5CXA=");
-    background-size: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 20px 0 0 20px;
-}
-.letter{
-    display: flex;
-    border-radius: 20px;
-
-}
-.letter-details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    padding: 20px;
-    border-radius: 0 20px 20px 0;
-}
-.letter-details .subscribe{
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.letter-details .join{
-    max-width: 500px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.letter-details input{
-    width: 300px;
-    margin: 10px;
-    padding: 5px;
+.inside-item .titles{
+    font-size: 10px;
 }
 footer{
     background-color: rgb(143, 85, 27);
@@ -272,14 +221,16 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
 }
 .left-footer{
     display: flex;
     flex-direction: column;
-    position: relative;
-    right: 200px;
+    padding: 30px;
+    align-self: flex-start;
+
+
 }
 .social-media{
     display: flex;
@@ -296,9 +247,10 @@ footer{
     display: inline;
     margin-right: 20px;
     color: rgb(208, 204, 204);
-    font-size: 12px;
+    font-size: 10px;
 }
 .ending-title{
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -307,8 +259,8 @@ footer{
     color: rgb(200, 199, 199);
 }
 .right-footer{
-    position: relative;
-    left: 100px;
+    
+
 }
 .contact{
     margin-bottom: 10px;
@@ -317,8 +269,116 @@ footer{
     color: rgb(200, 199, 199);
     max-width: 200px;
     margin-top: 10px;
+    font-size: 10px;
 }
 
-@media screen {
+
+
+
+.review img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 2000px) {
+    /* CSS for large screens */
+    .big-font{
+        font-size: 40px;
+    }
+    .hero-section>.main-img{
+        height: 500px;
+    }
+
+    .card1{
+        width: 300px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+        
+    }
+    .hero-section button,button{
+        border-radius: 10px;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        align-self: center;
+        margin: 10px;
+    }
+    .welcome>p{
+        font-size: 20px;
+    }
+    .sub{
+        font-size: 30px;
+    }
+    .search-bar>input{
+        height: 50px;
+        border-radius: 10px;
+    }
+    .card button{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .pro-title{
+        font-size: 25px;
+    }
     
+    .reviw-price{
+        font-size: 20px;
+    }
+
+    .card-title,.review-title,.chose-title{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .review .comment{
+        font-size: 18px;
+        max-width: 300px;
+
+    }
+    .custname{
+        font-size: 22px;
+    }
+    .review img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .inside-item .contents{
+        font-size: 18px;
+        color: gray;
+        max-width: 300px;
+        padding: 10px;
+    }
+    .inside-item .titles{
+        font-size: 22px;
+    }
+    .cards-section,.reviews,.why-choose,.footer{
+        margin-top: 200px;
+    }
+    footer{
+        height: 400px;
+    }
+    .gray{
+        font-size: 18px;
+        color: rgb(200, 199, 199);
+    }
+    .navigate a{
+        font-size: 20px;
+    }
+    .social-media>div{
+        margin-right: 20px;
+    }
+    .pages,.contact{
+        font-size: 22px;
+    }
+    .small{
+        font-size: 18px;
+    }
+
+
+
 }
