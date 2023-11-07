@@ -75,6 +75,9 @@ body{
     align-self: center;
     margin: 10px;
 }
+button:hover{
+    background-color: rgb(2, 54, 2);
+}
 .hero-section button{
     margin-top: 30px;
 }
@@ -94,6 +97,9 @@ body{
     border-radius: 10px;
     margin: 5px;
     max-width: 600px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card1{
     background-size: cover;
