@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .head{
+    background-color: #E5F3D6;
 
 
 }
@@ -9,15 +10,15 @@ body{
     font-family: 'Italianno', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#2D544A;
 }
 .menu-kart{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: green;
+    color: #2D544A;
 }
 .menu{
     display: flex;
@@ -40,8 +41,8 @@ body{
     margin-left: 10px;
 }
 .search-bar>input{
-    width: 100%;
-    height: 20px;
+    width: 30%;
+    height: 2rem;
     border-radius: 10px;
     position: relative;
     bottom: 20px;
@@ -52,42 +53,64 @@ body{
 .hero-section{
     display: flex;
     flex-direction: column;
+    background-color: #E5F3D6 ;
 }
 .hero-section>.main-img{
-    background-image:url("https://media.istockphoto.com/id/1165099685/photo/cotton-bag-glass-jar-green-leaves-and-recycled-tableware-top-view-zero-waste-eco-friendly.jpg?s=2048x2048&w=is&k=20&c=8OMgd9R-L5-WQAnshHl-eo2EWDej2FOTGXluEsL6ioo=") ;
-    background-size: cover;
+    background-image: url("https://media.istockphoto.com/id/1213480705/photo/zero-waste-shopping-concept.webp?b=1&s=170667a&w=0&k=20&c=bnttB7TPvsaguGw6vlSlyWBK5hWke7PTZWVF_VcWOCg=");
     height: 300px;
+   
 }
 .welcome {
-    margin-left: 10px;
-}
-.welcome>p{
-    font-size: 8px;
-    color: gray;
-}
-.hero-section button,button{
-    background-color: rgb(6, 101, 6);
-    border-radius: 5px;
-    color: white;
-    border: none;
-    min-width: 20px;
-    font-size: 10px;
-    align-self: center;
-    margin: 10px;
-}
-button:hover{
-    background-color: rgb(2, 54, 2);
-}
-.hero-section button{
-    margin-top: 30px;
-}
-/* cards section */
-.cards-section{
-    margin: 80px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hero-section button,button{
+    background-color: #BE6E46;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    align-self: center;
+    margin: 10px;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub{
+    font-size: 2rem;
+    color: #2D544A;
+    font-weight: bold;
+}
+.tag-name{
+    font-size: 1rem;
+    color: #03291F;
+}
+button:hover{
+    background-color: #2D544A;
+}
+.hero-section button{
+    margin-top: 30px;
+}
+
+
+
+
+
+/* cards section */
+.cards-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF6F3;
     
 }
 .card{
@@ -95,8 +118,7 @@ button:hover{
     flex-direction: column;
     border: 1px solid grey;
     border-radius: 10px;
-    margin: 5px;
-    max-width: 600px;
+    margin: 10px;
 }
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -104,44 +126,68 @@ button:hover{
 .card1{
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 150px;
+    width: 10rem;
+    height: 15rem;
     margin: 5px;
     border-radius: 10px;
     
 }
 .row1,.row2{
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    columns: 300px 2;
+    align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
     
     
 }
+.row1{
+    
+}
 .card button{
-    width: 30px;
-    font-size: 5px;
+    width: 100%;
+    height: 1.6rem;
+    font-size: .6rem;
+    border-radius: 0 0 9px 9px;
+    position: relative;
+    top: 10px;
+
    
    
 }
 .card-details{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    color: #03291F;
 
 }
 .pro-title{
-    font-size: 8px;
+    font-size: 1rem;
+    padding: 6px;
+    max-width: 100px;
 }
-
+.price{
+    font-size: 1rem;
+}
 .reviw-price{
     display: flex;
-    font-size: 5px;
-    justify-content: space-between;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    font-weight: bold;
+    align-items: center;
 }
 .rev-count{
     color: grey;
+    text-decoration: line-through;
 
+}
+
+.cards-section>button{
+    margin-top: 3rem;
 }
 
 .reviw-price div{
@@ -154,19 +200,26 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
 }
 .riview{
     display: flex;
     flex-direction: row;
-    min-width: auto;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
 
 }
 .review img{
     object-fit: cover;
     border-radius: 50%;
+}
+.review img{
+    width: 100px;
+    height: 100px;
 }
 
 .green-dot3{
@@ -174,23 +227,24 @@ button:hover{
     justify-content: flex-end;
 }
 .review .comment{
-    font-size: 8px;
-    max-width: 200px;
+    font-size: 0.8rem;
+
 }
 .review div{
     padding-bottom: 10px;
 }
 .custname{
-    font-size: 10px;
-    color: black;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .review{
     border: 1px solid;
     border-radius: 10px;
-    margin: 5px;
-    color: gray;
+    margin: 10px;
+    color: #03291F;
     padding: 5px;
-    max-width: 300px;
+    width: 200px;
+    flex: 0 0 auto;
    
 }
 .why-choose{
@@ -202,24 +256,38 @@ button:hover{
 
 }
 .card-title,.review-title,.chose-title{
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    color: #2D544A;
+    font-weight: bold;
 }
+.chose-title{
+    padding-bottom: 3rem;
+}
+
 
 .why-card{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+
 }
 .inside-item .contents{
-    font-size: 8px;
-    color: gray;
-    max-width: 200px;
+    font-size: .8rem;
+    color: #03291F;
+    width: 200px;
     padding: 10px;
 }
 .inside-item .titles{
-    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #03291F;
+    padding: 5px 0 5px 0;
 }
 footer{
     background-color: rgb(143, 85, 27);
@@ -279,31 +347,106 @@ footer{
 }
 
 
+@media(min-width:600px) and (max-width : 900px){
+   .hero-section{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+   }
+   .hero-section>.main-img{
+    height:20rem;
+    width: 25rem;
+    border-radius: 10px;
+   }
+   .welcome {
+    align-items: flex-start;
+    justify-content: flex-start;
 
-
-.review img{
-    width: 50px;
-    height: 50px;
+    }
+    .cards-section{
+        width: 100vw;
+    }
+    .hero-section button{
+        align-self: flex-start;
+        margin-left: 0;
+    }
+    .sub{
+        font-size: 2.2rem;
+    }
+    .cards-section>button{
+        align-self: center;
+        margin-top: 5rem;
+    }
+    .review{
+        width: 14rem;
+        height: 30rem;
+    }
+    .review img{
+        width: 150px;
+        height: 150px;
+    }
+    .custname{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .review .comment{
+        font-size: 1rem;
+    
+    }
+    .riview{
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+       
 }
 
-@media (min-width: 768px) and (max-width: 2000px) {
+
+
+@media (min-width: 901px) and (max-width: 3000px) {
     /* CSS for large screens */
     .big-font{
         font-size: 40px;
     }
     .hero-section>.main-img{
         height: 500px;
+        width: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
     }
-
+    .hero-section{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+       }
+       .welcome {
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        }
+        .hero-section button{
+            align-self: flex-start;
+            margin-left: 0;
+        }
+    .cards-section{
+        margin-top: 0;
+    }
     .card1{
-        width: 300px;
-        height: 400px;
-        margin: 10px;
+        width: 200px;
+        height: 300px;
+        margin: 5px;
         border-radius: 10px;
         
     }
+    .row1,.row2{
+        width: 100vw;
+    }
     .card{
         margin: 20px 10px;
+        padding: 2rem;
         border-radius: 20px;
     }
     .hero-section button,button{
@@ -313,62 +456,112 @@ footer{
         width: 150px;
         height: 50px;
         font-size: 20px;
-        align-self: center;
-        margin: 10px;
+        align-self: flex-start;
+        margin-left: 0px;
     }
-    .welcome>p{
-        font-size: 20px;
+    .main-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
+    .card button{
+        width: 300px;
+        height: 1.6rem;
+        font-size: .6rem;
+        border-radius: 0 0 9px 9px;
+        position: relative;
+        top: 10px;
+    
+       
+       
+    }
+
     .sub{
-        font-size: 30px;
+        font-size: 4rem;
+    }
+    .tag-name{
+        font-size: 2rem;
+    }
+    .hero-section button,button{
+        width: 10rem;
+        height: 3rem;
     }
     .search-bar>input{
         height: 50px;
         border-radius: 10px;
     }
     .card button{
-        width: 100px;
-        height: 35px;
-        font-size: 15px;
+        width: 100%;
+        height: 3rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+    .cards-section>button{
+        align-self: center;
+        width: 10rem;
+        margin-top: 5rem;
     }
     .pro-title{
-        font-size: 25px;
+        font-size: 2rem;
+    }
+    .price{
+        font-size: 2rem;
     }
     
     .reviw-price{
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .card-title,.review-title,.chose-title{
-        font-size: 30px;
+        font-size: 3rem;
         margin-bottom: 40px;
+        padding-top: 4rem;
     }
     .review .comment{
         font-size: 18px;
         max-width: 300px;
 
     }
+    .review{
+        width: 16rem;
+        height: 30rem;
+    }
+    .riview{
+        align-self: center;
+        width: fit-content;
+    }
     .custname{
         font-size: 22px;
     }
+
     .review img{
         width: 100px;
         height: 100px;
         object-fit: cover;
         border-radius: 50%;
     }
+    .why-card{
+        padding-top: 50px;
+        width: fit-content;
+        justify-content: center;
+        align-items: flex-start;
+    }
     .inside-item .contents{
-        font-size: 18px;
         color: gray;
         max-width: 300px;
         padding: 10px;
     }
+    .inside-item{
+        padding: 20px;
+    }
     .inside-item .titles{
-        font-size: 22px;
+        font-size: 1.5rem;
     }
-    .cards-section,.reviews,.why-choose,.footer{
-        margin-top: 200px;
+    .inside-item div{
+        padding: 10px;
     }
+
     footer{
         height: 400px;
     }
@@ -387,6 +580,9 @@ footer{
     }
     .small{
         font-size: 18px;
+    }
+    .why-card{
+        width: 100vw;
     }
 
 
