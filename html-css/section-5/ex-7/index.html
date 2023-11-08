@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; 
+      background-color: #f4f4f4;
+    }
+    .pricing-table {
+      display: flex;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .pricing-column {
+      flex: 1; 
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .plan-price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #4caf50; 
+      margin-bottom: 15px;
+    }
+    .plan-features {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 10px;
+    }
+    .cta-button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-column">
+            <div class="plan-title">Basic Plan</div>
+            <div class="plan-price">$19.99/month</div>
+            <ul class="plan-features">
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+            <a href="#" class="cta-button">Get Started</a>
+          </div>
+          <div class="pricing-column">
+            <div class="plan-title">Standard Plan</div>
+            <div class="plan-price">$39.99/month</div>
+            <ul class="plan-features">
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+              <li>Feature 4</li>
+            </ul>
+            <a href="#" class="cta-button">Get Started</a>
+          </div>
+          <div class="pricing-column">
+            <div class="plan-title">Premium Plan</div>
+            <div class="plan-price">$59.99/month</div>
+            <ul class="plan-features">
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+              <li>Feature 4</li>
+              <li>Feature 5</li>
+            </ul>
+            <a href="#" class="cta-button">Get Started</a>
+          </div>
+    </div>
+</body>
+</html>

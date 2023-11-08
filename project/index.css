@@ -6,6 +6,15 @@ body{
 
 
 }
+.navigatio{
+    display: none;
+}
+.head{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
 .logo h3{
     font-family: 'Italianno', cursive;
     font-family: 'Pacifico', cursive;
@@ -30,23 +39,27 @@ body{
     margin-right: 10px;
 }
 .kart-profile{
-    display: flex;
+    display: none;
+    /* display: flex;
     margin: 10px 10px 0 10px;
-    font-size: 20px;
+    font-size: 20px; */
 }
 .kart-profile>div{
     margin-left: 20px;
 }
+
 .search-bar{
-    margin-left: 10px;
-}
-.search-bar>input{
-    width: 30%;
-    height: 2rem;
-    border-radius: 10px;
     position: relative;
-    bottom: 20px;
-    
+    top: 5px;
+}
+
+.search-bar>input{
+    margin-top: 10px;
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+  
 }
 
 /* hero section */
@@ -56,7 +69,7 @@ body{
     background-color: #E5F3D6 ;
 }
 .hero-section>.main-img{
-    background-image: url("https://media.istockphoto.com/id/1213480705/photo/zero-waste-shopping-concept.webp?b=1&s=170667a&w=0&k=20&c=bnttB7TPvsaguGw6vlSlyWBK5hWke7PTZWVF_VcWOCg=");
+    background-image: url("https://media.istockphoto.com/id/1320934166/photo/cosmetic-skin-care-products-on-green-leaves.jpg?s=612x612&w=0&k=20&c=X4pwnTaBzXHDOGZlcdJdlKxmYd__61xboHVIiR5JMIk=");
     height: 300px;
    
 }
@@ -129,7 +142,7 @@ button:hover{
     width: 10rem;
     height: 15rem;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     
 }
 .row1,.row2{
@@ -143,8 +156,11 @@ button:hover{
     
     
 }
-.row1{
-    
+.row1::-webkit-scrollbar{
+    display: none;
+}
+.row2::-webkit-scrollbar{
+    display: none;
 }
 .card button{
     width: 100%;
@@ -213,6 +229,9 @@ button:hover{
     overflow-x: scroll;
 
 }
+.riview::-webkit-scrollbar{
+    visibility: hidden;
+}
 .review img{
     object-fit: cover;
     border-radius: 50%;
@@ -276,6 +295,9 @@ button:hover{
     overflow: hidden;
     overflow-x: scroll;
 
+}
+.why-card::-webkit-scrollbar{
+    display: none;
 }
 .inside-item .contents{
     font-size: .8rem;
@@ -348,6 +370,26 @@ footer{
 
 
 @media(min-width:600px) and (max-width : 900px){
+    .navigatio{
+        display: none;
+    }
+    .search-bar{
+        position: relative;
+        top: 5px;
+    }
+
+    .search-bar>input{
+        margin-top: 10px;
+        height: 30px;
+        width: 80%;
+    }
+    .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+   
    .hero-section{
     flex-direction: row;
     justify-content: space-around;
@@ -406,6 +448,38 @@ footer{
 
 @media (min-width: 901px) and (max-width: 3000px) {
     /* CSS for large screens */
+    .navigatio{
+        display: inline;
+    }
+    .kart-profile{
+        display: flex;
+    }
+
+    .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: none;
+    }
+    .search-bar{
+        position: relative;
+        top: 5px;
+    }
+
+    .search-bar>input{
+        margin-top: 10px;
+        height: 30px;
+        width: 80%;
+    }
+    .navigatio a{
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        color:#2D544A;
+        font-weight: bold;
+    }
     .big-font{
         font-size: 40px;
     }
@@ -435,7 +509,7 @@ footer{
         margin-top: 0;
     }
     .card1{
-        width: 200px;
+        width: 300px;
         height: 300px;
         margin: 5px;
         border-radius: 10px;
@@ -443,10 +517,10 @@ footer{
     }
     .row1,.row2{
         width: 100vw;
+
     }
     .card{
         margin: 20px 10px;
-        padding: 2rem;
         border-radius: 20px;
     }
     .hero-section button,button{
@@ -487,14 +561,10 @@ footer{
         width: 10rem;
         height: 3rem;
     }
-    .search-bar>input{
-        height: 50px;
-        border-radius: 10px;
-    }
     .card button{
         width: 100%;
         height: 3rem;
-        border-radius: 10px;
+        border-radius: 0 0 9px 9px;
         font-size: 1.5rem;
     }
     .cards-section>button{
@@ -503,10 +573,11 @@ footer{
         margin-top: 5rem;
     }
     .pro-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
     .price{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     
     .reviw-price{

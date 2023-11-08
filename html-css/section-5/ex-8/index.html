@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* 100% of the viewport height */
+      background-color: #f4f4f4;
+    }
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 50px;
+    }
+    .timeline-event {
+      flex: 0 0 20%; /* Each event takes up 20% of the container */
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .event-date {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .event-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .event-description {
+      font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-event">
+            <div class="event-date">2022-01-01</div>
+            <div class="event-title">Event 1</div>
+            <div class="event-description">Description for Event 1</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2022-03-15</div>
+            <div class="event-title">Event 2</div>
+            <div class="event-description">Description for Event 2</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2022-06-22</div>
+            <div class="event-title">Event 3</div>
+            <div class="event-description">Description for Event 3</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2022-09-10</div>
+            <div class="event-title">Event 4</div>
+            <div class="event-description">Description for Event 4</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2022-12-05</div>
+            <div class="event-title">Event 5</div>
+            <div class="event-description">Description for Event 5</div>
+          </div>
+    </div>
+</body>
+</html>

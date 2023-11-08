@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      width: 300px;
+      margin: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Card Image">
+          <div class="card-content">
+            <h3>Card 1</h3>
+            <p>This is a sample card.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Card Image">
+          <div class="card-content">
+            <h3>Card 2</h3>
+            <p>This is another sample card.</p>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+</body>
+</html>

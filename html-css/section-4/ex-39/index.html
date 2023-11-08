@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: rgb(219, 75, 99);
+            padding: 10px;
+            color: white;
+        }
+        .head{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 2px;
+
+        }
+        .menu-kart{
+            grid-column: span 1;
+        }
+        .navigatio{
+            grid-column: span 2;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        nav li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="head" id="head">
+        <div class="menu-kart">    
+                <div class="logo">
+                    <h3>Logo</h3>
+                </div>
+        </div>
+      
+        <nav class="navigatio">
+            <ul class="nav">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">Sale</a></li>
+                <li> <a href="">Contact Us</a></li>
+            </ul>
+            
+            
+            
+           
+        </nav>
+        
+    </header>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+            gap: 2rem;
+        }
+        .grid-coloumn {
+           overflow: hidden;
+           border-radius: 0.5rem;
+           position: relative;
+           color: #fff;
+        }
+        .grid-coloumn > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            max-height: 400px;
+        }
+        .grid-coloumn:nth-child(1){
+            grid-column: 1/span 3;
+        }
+        .grid-coloumn:nth-child(4){
+            grid-column: 2/span 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-coloumn">
+            <img src="https://plus.unsplash.com/premium_photo-1665657351698-7d61f4b57ddc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="">
+        </div>
+        <div class="grid-coloumn">
+            <img src="https://images.unsplash.com/photo-1683009427513-28e163402d16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" alt="">
+        </div>
+        <div class="grid-coloumn">
+            <img src="https://images.unsplash.com/photo-1695653422894-89ec853c31c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8" alt="">
+        </div>
+        <div class="grid-coloumn">
+            <img src="https://images.unsplash.com/photo-1699412958387-2fe86d46d394?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" alt="">
+        </div>
+        <div class="grid-coloumn">
+            <img src="https://images.unsplash.com/photo-1695653422694-4c422f9caddf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+</body>
+</html>

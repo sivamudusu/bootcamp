@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+            gap: 2rem;
+        }
+        .photo {
+           overflow: hidden;
+           border-radius: 0.5rem;
+           position: relative;
+           color: #fff;
+        }
+        .photo > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            max-height: 400px;
+        }
+        .photo:nth-child(2){
+            grid-column: 2/span 2;
+        }
+        .photo:nth-child(5){
+            grid-column: 1/span 3;
+        }
+        .photo:nth-child(6){
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1558824136-d0622503354e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1640257257866-0b1eda8bfb90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1558396618-7be8a6ed4fbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1558824146-5bf85d09b2fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1558396938-06f53595ba2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div class="photo">
+            <img src="https://media.istockphoto.com/id/495022606/photo/taj-mahal-agra-india.webp?b=1&s=170667a&w=0&k=20&c=YaNA5l-BAOlLncOMi1vLE_jLlLImrPQRzGJn38PwoIQ=" alt="">
+        </div>
+    </div>
+</body>
+</html>
