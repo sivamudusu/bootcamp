@@ -1,0 +1,696 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    background-color: #E5F3D6;
+
+
+}#nav-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  #nav-menu li {
+    list-style: none;
+    padding: 16px;
+  }
+  
+  #nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  #nav-menu a:hover {
+    background-color: #ddd;
+  }
+
+  .bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar:hover {
+    opacity: 0.7;
+  }
+  
+
+
+.navigatio{
+    display: none;
+}
+.head{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.logo h3{
+    font-family: 'Italianno', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#2D544A;
+}
+.menu-kart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2D544A;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+.menu>div{
+    margin-right: 10px;
+}
+.kart-profile{
+    display: none;
+    /* display: flex;
+    margin: 10px 10px 0 10px;
+    font-size: 20px; */
+}
+.kart-profile>div{
+    margin-left: 20px;
+}
+
+.search-bar{
+    position: relative;
+    top: 5px;
+}
+
+.search-bar>input{
+    margin-top: 10px;
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+  
+}
+
+/* hero section */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5F3D6 ;
+}
+.hero-section>.main-img{
+    background-image: url("https://media.istockphoto.com/id/1320934166/photo/cosmetic-skin-care-products-on-green-leaves.jpg?s=612x612&w=0&k=20&c=X4pwnTaBzXHDOGZlcdJdlKxmYd__61xboHVIiR5JMIk=");
+    height: 300px;
+   
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section button,button{
+    background-color: #BE6E46;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    align-self: center;
+    margin: 10px;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub{
+    font-size: 2rem;
+    color: #2D544A;
+    font-weight: bold;
+}
+.tag-name{
+    font-size: 1rem;
+    color: #03291F;
+}
+button:hover{
+    background-color: #2D544A;
+}
+.hero-section button{
+    margin-top: 30px;
+}
+
+
+
+
+
+/* cards section */
+.cards-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF6F3;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 15rem;
+    margin: 5px;
+    border-radius: 15px;
+    
+}
+.row1,.row2{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    
+    
+}
+.row1::-webkit-scrollbar{
+    display: none;
+}
+.row2::-webkit-scrollbar{
+    display: none;
+}
+.card button{
+    width: 100%;
+    height: 1.6rem;
+    font-size: .6rem;
+    border-radius: 0 0 9px 9px;
+    position: relative;
+    top: 10px;
+
+   
+   
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #03291F;
+
+}
+.pro-title{
+    font-size: 1rem;
+    padding: 6px;
+    max-width: 100px;
+}
+.price{
+    font-size: 1rem;
+}
+.reviw-price{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    font-weight: bold;
+    align-items: center;
+}
+.rev-count{
+    color: grey;
+    text-decoration: line-through;
+
+}
+
+.cards-section>button{
+    margin-top: 3rem;
+}
+
+.reviw-price div{
+    margin: 10px;
+}
+
+/* review section */
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.riview{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+.riview::-webkit-scrollbar{
+    visibility: hidden;
+}
+.review img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review img{
+    width: 100px;
+    height: 100px;
+}
+
+.green-dot3{
+    display: flex;
+    justify-content: flex-end;
+}
+.review .comment{
+    font-size: 0.8rem;
+
+}
+.review div{
+    padding-bottom: 10px;
+}
+.custname{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.review{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    color: #03291F;
+    padding: 5px;
+    width: 200px;
+    flex: 0 0 auto;
+   
+}
+.why-choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
+}
+.card-title,.review-title,.chose-title{
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    color: #2D544A;
+    font-weight: bold;
+}
+.chose-title{
+    padding-bottom: 3rem;
+}
+
+
+.why-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+.why-card::-webkit-scrollbar{
+    display: none;
+}
+.inside-item .contents{
+    font-size: .8rem;
+    color: #03291F;
+    width: 200px;
+    padding: 10px;
+}
+.inside-item .titles{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #03291F;
+    padding: 5px 0 5px 0;
+}
+footer{
+    background-color: rgb(143, 85, 27);
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-self: flex-start;
+
+
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+}
+.social-media>div{
+    margin-right: 10px;
+}
+.left-footer>div{
+    margin: 10px 10px 10px 0;
+}
+.navigate a{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;
+    color: rgb(208, 204, 204);
+    font-size: 10px;
+}
+.ending-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.gray{
+    font-size: 10px;
+    color: rgb(200, 199, 199);
+}
+.right-footer{
+    
+
+}
+.contact{
+    margin-bottom: 10px;
+}
+.small{
+    color: rgb(200, 199, 199);
+    max-width: 200px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+
+@media(min-width:600px) and (max-width : 900px){
+    .navigatio{
+        display: none;
+    }
+    .search-bar{
+        position: relative;
+        top: 5px;
+    }
+
+    .search-bar>input{
+        margin-top: 10px;
+        height: 30px;
+        width: 80%;
+    }
+    .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+   
+   .hero-section{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+   }
+   .hero-section>.main-img{
+    height:20rem;
+    width: 25rem;
+    border-radius: 10px;
+   }
+   .welcome {
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    }
+    .cards-section{
+        width: 100vw;
+    }
+    .hero-section button{
+        align-self: flex-start;
+        margin-left: 0;
+    }
+    .sub{
+        font-size: 2.2rem;
+    }
+    .cards-section>button{
+        align-self: center;
+        margin-top: 5rem;
+    }
+    .review{
+        width: 14rem;
+        height: 30rem;
+    }
+    .review img{
+        width: 150px;
+        height: 150px;
+    }
+    .custname{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .review .comment{
+        font-size: 1rem;
+    
+    }
+    .riview{
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+       
+}
+
+
+
+@media (min-width: 901px) and (max-width: 3000px) {
+    /* CSS for large screens */
+    .navigatio{
+        display: inline;
+    }
+    .kart-profile{
+        display: flex;
+    }
+
+    .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: none;
+    }
+    .search-bar{
+        position: relative;
+        top: 5px;
+    }
+
+    .search-bar>input{
+        margin-top: 10px;
+        height: 30px;
+        width: 80%;
+    }
+    .navigatio a{
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        color:#2D544A;
+        font-weight: bold;
+    }
+    .big-font{
+        font-size: 40px;
+    }
+    .hero-section>.main-img{
+        height: 500px;
+        width: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .hero-section{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+       }
+       .welcome {
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        }
+        .hero-section button{
+            align-self: flex-start;
+            margin-left: 0;
+        }
+    .cards-section{
+        margin-top: 0;
+    }
+    .card1{
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 10px;
+        
+    }
+    .row1,.row2{
+        width: 100vw;
+
+    }
+    .card{
+        margin: 20px 10px;
+        border-radius: 20px;
+    }
+    .hero-section button,button{
+        border-radius: 10px;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        align-self: flex-start;
+        margin-left: 0px;
+    }
+    .main-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .card button{
+        width: 300px;
+        height: 1.6rem;
+        font-size: .6rem;
+        border-radius: 0 0 9px 9px;
+        position: relative;
+        top: 10px;
+    
+       
+       
+    }
+
+    .sub{
+        font-size: 4rem;
+    }
+    .tag-name{
+        font-size: 2rem;
+    }
+    .hero-section button,button{
+        width: 10rem;
+        height: 3rem;
+    }
+    .card button{
+        width: 100%;
+        height: 3rem;
+        border-radius: 0 0 9px 9px;
+        font-size: 1.5rem;
+    }
+    .cards-section>button{
+        align-self: center;
+        width: 10rem;
+        margin-top: 5rem;
+    }
+    .pro-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .price{
+        font-size: 1.2rem;
+    }
+    
+    .reviw-price{
+        font-size: 1.5rem;
+    }
+
+    .card-title,.review-title,.chose-title{
+        font-size: 3rem;
+        margin-bottom: 40px;
+        padding-top: 4rem;
+    }
+    .review .comment{
+        font-size: 18px;
+        max-width: 300px;
+
+    }
+    .review{
+        width: 16rem;
+        height: 30rem;
+    }
+    .riview{
+        align-self: center;
+        width: fit-content;
+    }
+    .custname{
+        font-size: 22px;
+    }
+
+    .review img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .why-card{
+        padding-top: 50px;
+        width: fit-content;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .inside-item .contents{
+        color: gray;
+        max-width: 300px;
+        padding: 10px;
+    }
+    .inside-item{
+        padding: 20px;
+    }
+    .inside-item .titles{
+        font-size: 1.5rem;
+    }
+    .inside-item div{
+        padding: 10px;
+    }
+
+    footer{
+        height: 400px;
+    }
+    .gray{
+        font-size: 18px;
+        color: rgb(200, 199, 199);
+    }
+    .navigate a{
+        font-size: 20px;
+    }
+    .social-media>div{
+        margin-right: 20px;
+    }
+    .pages,.contact{
+        font-size: 22px;
+    }
+    .small{
+        font-size: 18px;
+    }
+    .why-card{
+        width: 100vw;
+    }
+
+
+
+}
