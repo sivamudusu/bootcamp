@@ -66,7 +66,7 @@ class Chessboard {
       from[1] < 0 ||
       from[1] >= 8 ||
       to[0] < 0 ||
-      to[1] >= 8 ||
+      to[0] >= 8 ||
       to[1] < 0 ||
       to[1] >= 8
     ) {
@@ -89,6 +89,7 @@ class Chessboard {
 }
 
 const chessboard = new Chessboard();
+chessboard.display();
 chessboard.movepiece([6, 0], [4, 0]);
 chessboard.movepiece([4, 0], [1, 0]);
 chessboard.movepiece([1,1],[6,1]);

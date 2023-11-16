@@ -94,7 +94,5 @@ const chess = new Chessboard();
 chess.display();
 chess.movepiece([1, 0], [3, 0]);
 
-utility.saveToYaml("board.yaml");
-utility.loadChessboard("board.yaml");
-
-module.exports = { Chessboard };
+// utility.saveToYaml("board.yaml");
+// utility.loadChessboard("board.yaml");

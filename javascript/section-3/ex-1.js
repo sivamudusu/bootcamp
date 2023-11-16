@@ -1,7 +1,7 @@
 const compose = (f, g) => {
   // a functions that takes two functions and returns a new function
   return (x) => {
-    return f(x) + g(x);
+    return f(g(x));
   };
 };
 
