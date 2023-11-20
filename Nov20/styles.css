@@ -43,10 +43,17 @@ header{
 .nav{
     gap: 1rem;
 }
+.next{
+    color:rgb(202, 198, 198);
+    border-bottom: 1px solid gray;
+}
 .menu{
     padding: 0.5rem;
     border-top: 1px solid gray;
+    border-top-style:double ;
     border-bottom: 1px solid gray;
+    border-bottom-style:double ;
+    
 }
 .title{
     align-self: center;
@@ -167,11 +174,18 @@ footer{
    font-weight: bold;
    color: rgb(5, 5, 71) ;
    flex-wrap: wrap;
+   border-top: 1px solid gray;
+   padding-top: 8rem;
+}
+.underline >div{
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid gray;
+}
+.connected{
+    font-size: clamp(1rem,2vw,2rem);
 }
 
-.footer{
-    text-decoration: underline;
-}
+
 
 @media only screen and (max-width: 600px) {
     .nav{
