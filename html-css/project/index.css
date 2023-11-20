@@ -13,7 +13,7 @@ body{
     width: 100%;
     background-color: white;
     z-index: 1;
-  }
+}
   
   #nav-menu li {
     list-style: none;
@@ -408,6 +408,9 @@ footer{
     .navigatio{
         display: none;
     }
+    .visible{
+        display: block;
+    }
     .search-bar{
         position: relative;
         top: 5px;
@@ -488,6 +491,9 @@ footer{
     }
     .kart-profile{
         display: flex;
+    }
+    .visible{
+        display: inline;
     }
 
     .head{

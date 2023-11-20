@@ -1,0 +1,8 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h2{
+    font-size: clamp(1rem,+5vw,10rem);
+}
