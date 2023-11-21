@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .autocomplete-suggestions {
+            border: 1px solid #ccc;
+            max-height: 100px;
+            overflow-y: auto;
+            position: absolute;
+        }
+
+        .autocomplete-suggestion {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .autocomplete-suggestion:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="autocompleteInput" oninput="showSuggestions()">
+
+        <div id="suggestionsContainer" class="autocomplete-suggestions"></div>
+
+        <div id="suggestionsContainer" class="autocomplete-suggestions"></div>
+    </div>
+   
+<script src="./index.js"></script>
+</body>
+</html>

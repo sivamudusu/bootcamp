@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            list-style: none;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+        .tab-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tab" onclick="showTab('tab1')">tab1</li>
+        <li class="tab" onclick="showTab('tab2')">tab2</li>
+        <li class="tab" onclick="showTab('tab3')">tab3</li>
+    </ul>
+    <div id="tab1" class="tab-content">
+        this is related to tab1 data only
+    </div>
+    <div id="tab2" class="tab-content">
+        this is related to tab2 data only
+    </div>
+    <div id="tab3" class="tab-content">
+        this is related to tab3 data only
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

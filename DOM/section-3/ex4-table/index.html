@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        table,td,tr{
+            border: 1px solid gray;
+        }
+        thead{
+            background-color: rgb(170, 169, 169);
+        }
+  
+    </style>
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <td>count</td>
+                <td>name</td>
+                <td>age</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>shiva</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>shiva</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>shiva</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="add" onclick="addRow()">add</button>
+    <button id="remove" onclick="remove()">remove</button>
+    <script src="./index.js"></script>
+</body>
+</html>

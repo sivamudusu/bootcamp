@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            padding: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="search" type="text" placeholder="search">
+        <label for="search">search here</label>
+    </div>
+    <div>
+        <ul id="list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>Another Item</li>
+            <li>filtered Item</li>
+            <li>shiva</li>
+            <li>example</li>
+        </ul>
+    </div>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
