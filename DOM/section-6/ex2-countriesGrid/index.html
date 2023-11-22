@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .country {
+      width: 150px;
+      height: 150px;
+      border: 1px solid #ccc;
+      margin: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+        .India {
+      background-color: #ff9933; /* Saffron */
+      color: white;
+    }
+
+    .country.USA {
+      background-color: #b22234; /* Old Glory Red */
+      color: white;
+    }
+
+    .country.Canada {
+      background-color: #d71d24; /* Canadian Red */
+      color: white;
+    }
+
+    .country.UK {
+      background: linear-gradient(90deg, #012169 50%, #fff 50%);
+      color: 0;
+    }
+
+    .country.Australia {
+      background-color: #00008b; /* Dark Blue */
+      color: white;
+    }
+
+    .country.Germany {
+      background: linear-gradient(90deg, #000 33.3%, #ffcc00 33.3%, #ffcc00 66.6%, #000 66.6%);
+      color: white;
+    }
+
+    .country.France {
+      background: linear-gradient(90deg, #0055a4 33.3%, #fff 33.3%, #fff 66.6%, #0055a4 66.6%);
+      color: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container" id="container"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
