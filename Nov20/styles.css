@@ -182,7 +182,7 @@ footer{
     border-bottom: 1px solid gray;
 }
 .connected{
-    font-size: clamp(1rem,2vw,2rem);
+    font-size: clamp(1.5rem,2vw,2rem);
 }
 
 
