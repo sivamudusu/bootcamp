@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="mobile-nav">
+            <div class="logo">Book Hunt<i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></div>
+            <div id="menu" class="menu-toggle" onclick="menu()">&#9776;</div>
+            <ul id="nav" class="nav-links" onclick="menu()">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./wishlist.html">Wish List</a></li>
+              <li><a href="./resources.html">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+    </section>
+</body>
+
+<style>
+    
+.header{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    padding: 20px;
+    background-color:#0D1B2A;
+    color:white ;
+  }
+  li a:hover{
+    text-decoration: underline yellowgreen;
+  }
+  .logo{
+    font-weight: bold;
+    font-size: clamp(1rem, 2.5vw, 2rem); 
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: white;
+  }
+
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      color: #0D1B2A;
+      padding: 2rem;
+      /* flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center; */
+    }
+    .nav-links a{
+      color: #ffffff;
+      padding: 2rem;
+      gap: 2rem;
+      font-size: 1.5rem;
+      
+    }
+    .nav-links a:hover{
+      cursor: pointer;
+    }
+    .toggle{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    flex-direction: column;
+    color: #0D1B2A;
+    top: 0;
+    right: -30px; /* Start off-screen */
+    height: 100%;
+    width: 300px;
+    background-color:#0D1B2A;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Smooth transition */
+    }
+  
+    .nav-links.show {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+</style>
+<script>
+
+function menu() {
+  const menu = document.getElementById("nav");
+  menu.classList.toggle("toggle");
+}
+  const li = document.querySelectorAll(".nav-Links li")[0];
+  li.addEventListener("click",function(e){
+    e.preventDefault();
+    window.location.href = "./home.html";
+  })
+  
+
+
+</script>

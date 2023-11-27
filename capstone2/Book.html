@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        
+        .book-section{
+            padding: 2rem 6rem;
+            display: flex;
+            gap: 4rem;
+        }
+        .book-img{
+            margin-top: 3rem;
+            display: flex;
+            min-width: 250px;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .book-content{
+            max-width: 60rem;
+        }
+        .book-content h1{
+            font-size: clamp(2rem, 2.5vw, 4rem);
+        }
+        .book-content .author{
+            font-size: clamp(1rem, 1.5vw, 2rem);
+            font-weight: 100;
+        }
+        .book-content p{
+            font-size: medium;
+            margin-top: 1rem;
+            
+        }
+       #rating_container{
+        margin: 1rem 0;
+        
+       }
+       #rating_count{
+        font-size: x-large;
+        font-weight: bold;
+        margin: 0 1rem;
+       }
+       #reviews{
+        color: gray;
+        font-size: large;
+        align-self: center;
+       }
+       #add-to-favorites{
+        height: 3rem;
+        border-radius: 1rem;
+        background-color: #0D1B2A;
+        border: none;
+        box-shadow: 0 20px 15px rgba(36, 7, 7, 0.1);
+        color: white;
+       }
+       #genre_id{
+        font-weight: bold;
+       }
+       #genres_list span{
+        text-decoration: underline green;
+        margin: 0 0.5rem;
+        color: gray;
+        
+       }
+        .star {
+  width: 30px; /* Adjust the size of the star */
+  height: 30px;
+  margin: 0 2px;
+  background-color: #ddd; /* Default star color */
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  
+
+  
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    /* Add your styles for iPad in portrait here */
+    .book-section{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+        
+    </style>
+</head>
+<body>
+    <section class="nav-bar" id="nav-bar"></section>
+    <section class="book-section">
+        <div id="book-img" class="book-img">
+            
+        </div>
+        <div id="book-content" class="book-content">
+
+        </div>
+    </section>
+    <section id="Author" class="author-section">
+        
+    </section>
+    <section id="footer"></section>
+    <script src="./Book.js"></script>
+</body>
+</html>

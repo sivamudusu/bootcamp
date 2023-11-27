@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* .main-image {
+    width: 100%;
+    object-fit: contain;
+    /* margin-bottom: 20px; Adjust as needed */
+
+.hero-section{
+    background-color:#0D1B2A ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-image: url("./image0_0\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    backdrop-filter: blur(5rem)
+}
+
+/* .hero-section img {
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Adjust the blur radius as needed */
+
+
+.main-title {
+    
+    color:#0D1B2A;
+    size: clamp(2rem, 2vw, 4rem);
+    font-weight: bolder;
+    bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+    gap: 2rem;
+    
+}
+.titlemain{
+    background: linear-gradient(45deg, #485da9,#1d6666, #021b30);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    /* color: #0D1B2A;
+    background-image: linear-gradient(); */
+    font-size: clamp(2rem, 4vw, 8rem);
+}
+.sub{
+    font-size: clamp(1.3rem, 2vw, 3rem);
+}
+.subtitle{
+    max-width: 500px;
+    color: #232323;
+}
+
+.explore-button {
+    min-width: 40%;
+    height: 3rem;
+    background-color: white;
+    color: #0D1B2A;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(253, 251, 251, 0.1), 0 6px 20px rgba(255, 254, 254, 0.15);
+    cursor: pointer;
+    font-weight: bold;
+}
+.explore-button:hover{
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(210, 231, 118, 0.1), 0 6px 20px rgba(179, 193, 101, 0.15);
+}
+.wide-range{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose{
+    position: relative;
+    color: white;
+    background-color: #0D1B2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+    margin: 0;
+    border: 1px solid #0D1B2A;
+    font-size: clamp(1rem, 2vw, 2rem);
+    
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 20px; */
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+    max-width: 100%;
+}
+
+.carousel-item img {
+    min-width: 100%; /* Adjust as needed */
+    
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+#footer {
+    /* margin-top: 10px; Adjust as needed */
+}

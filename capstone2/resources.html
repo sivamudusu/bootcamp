@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            color: #0D1B2A ;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .collapsible-section {
+            height: max-content;
+            /* border: 1px solid #ccc; */
+            margin: 10px;
+            padding: 10px;
+        }
+        #chart {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+      min-width:300px;
+      height: 300px;
+      margin: 20px;
+      padding: 2rem;
+      border: 1px solid #ddd;
+    }
+
+        .collapsible-header {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 1rem;
+            border: none;
+            color: #0D1B2A;
+            /* background-color: #ffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        .collapsible-content {
+            display: none;
+            
+           
+        }
+
+        /* Style for the "collapsed" class */
+        .collapsed {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .chart-input{
+            width: 30rem;
+            height: 3rem;
+            border-radius: 2rem;
+            font-size: larger;
+            padding-left: 1rem;
+            font-size: large;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .chart-form button{
+            width: 5rem;
+            height: 3rem;
+            border-radius: 2rem;
+            background-color: #36454F;
+            color: white;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+        .collapse-text{
+            font-weight: bold;
+            color: #0D1B2A;
+        }
+        .Expand{
+            color:#F26430 ;
+        }
+        @media only screen and (max-width: 1024px){
+    /* Add your styles for iPad in portrait here */
+    .chart-input{
+        width: 10rem;
+    }
+  }
+    </style>
+</head>
+<body>
+    <section class="nav-bar" id="nav-bar"></section>
+    <section class="resources">
+        <div class="collapsible-section">
+            <div class="collapsible-header" onclick="toggleSection('section1')">
+                <div class="collapse-text">Book distribtion based on genres over the years</div>
+                <div class="Expand">Expand   <i class="fa-solid fa-circle-down"></i></div>
+            </div>
+            <div id="section1" class="collapsible-content">
+                <h2>Book Distribution data</h2>
+                <form action="" id="form" class="chart-form">
+                    <input class="chart-input" id="search" type="text" placeholder="search any genre or collection">
+                    <button>go</button>
+                </form>
+                <div>
+                    <div id="chart">
+                    </div>
+                    <div id="narrativeText"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="collapsible-section">
+            <div id="collapsible-header" class="collapsible-header" onclick="toggleSection('section2')">
+                <div class="collapse-text">Rating trends of users On different genres</div>
+                <div class="Expand">Expand <i class="fa-solid fa-circle-down"></i></div>
+            </div>
+            <div id="section2" class="collapsible-content">
+                <h2>Rating trends</h2>
+                <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                    <canvas id="myChart" width="600px" height="300px"></canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script  src="./resources.js"></script>
+</body>
+</html>
