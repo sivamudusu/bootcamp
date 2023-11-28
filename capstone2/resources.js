@@ -41,28 +41,30 @@ async function getData(key, searchType) {
 }
 
 const narrative = document.getElementById("narrativeText");
-  const p = document.createElement("p");
-  const p2 = document.createElement("p");
-  p.id = "narrative1";
-  p2.id = "narrative2"
-  narrative.append(p);
-  narrative.append(p2)
+const p = document.createElement("p");
+const p2 = document.createElement("p");
+p.id = "narrative1";
+p2.id = "narrative2";
+narrative.append(p);
+narrative.append(p2);
 
-function updateNarrative(array,search){
-  const p = document.getElementById("narrative1")
+function updateNarrative(array, search) {
+  const p = document.getElementById("narrative1");
   const p2 = document.getElementById("narrative2");
-  
-  array.sort((a,b)=>a.count-b.count);
+
+  array.sort((a, b) => a.count - b.count);
   // console.log(array);
-  
-  p.innerHTML = `<h4>Highest no of Books</h4>the books with genre <em><strong>${search}</strong></em>: the highest number of books in this genre are published in <em><strong>${array[array.length-1].year}</strong></em> at nearly <em><strong>${array[array.length-1].count}</strong></em> Books are there `
- 
-  
+
+  p.innerHTML = `<h4>Highest no of Books</h4>the books with genre <em><strong>${search}</strong></em>: the highest number of books in this genre are published in <em><strong>${
+    array[array.length - 1].year
+  }</strong></em> at nearly <em><strong>${
+    array[array.length - 1].count
+  }</strong></em> Books are there `;
+
   p2.innerHTML = `<h4>lowest no of Books</h4>the books with genre <em><strong>${search}</strong></em>: the highest number of books in this genre are published in <em><strong>${array[0].year}</strong></em>at nearly <em><strong>${array[0].count}</strong></em> Books are there `;
-  
 }
 
-function render(array,search) {
+function render(array, search) {
   const arrayData = array.reduce((grouped, book) => {
     const year = book.first_publish_year;
     if (grouped[year] == null) {
@@ -83,10 +85,10 @@ function render(array,search) {
       return obj;
     }
   });
-  const filterd = filters.slice(0,filters.length-1);
+  const filterd = filters.slice(0, filters.length - 1);
   // console.log(filterd);
   updatechart(filterd);
-  updateNarrative(filterd,search);
+  updateNarrative(filterd, search);
 }
 
 const margin = { top: 20, right: 30, bottom: 30, left: 40 };
@@ -161,12 +163,8 @@ form.addEventListener("submit", async function (e) {
   e.preventDefault();
   let search = document.getElementById("search").value;
   let ans = await getData(search, "genre");
-  render(ans,search);
+  render(ans, search);
 });
-
-
-
-
 
 // line chart section below this line//
 
@@ -174,9 +172,9 @@ async function get() {
   const result = await getMockData();
   localStorage.setItem("mockdata", JSON.stringify(result));
 }
-// get();
+get();
 async function getMockData() {
-  url = "https://api.mockaroo.com/api/7d9643c0?count=500&key=953287f0";
+  url = "./rating.json";
 
   try {
     let response = await fetch(url, { method: "GET" });
